@@ -1,0 +1,8 @@
+servers:
+  - name: test-everything
+    description: Official MCP reference test server (local, read-only demo tools, no secrets)
+    transport: stdio
+    command: npx
+    args: ["-y", "@modelcontextprotocol/server-everything"]
+    requires: [npx]
+    tools: [claude]
